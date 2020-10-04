@@ -1,7 +1,7 @@
 # Use a lighter version of Node as a parent image
-FROM node
+FROM node:14
 # Set the working directory to /api
-WORKDIR /app
+WORKDIR /backend
 # copy package.json into the container at /api
 COPY package*.json ./
 # install dependencies
