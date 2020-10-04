@@ -2,15 +2,13 @@
 
 ## Les Objectifs
 
-1. Récupérer le projet API REST qui comporte une partie backend (API rest) et une partie frontend
-(reactJS)
-2. Créer un/des fichier(s) DockerFile(s) pour builder notre image pour les serveurs de production
-3. Créer un fichier docker-compose.yml pour démarrer nos containers, nos services
-4. Modifier la documentation qui va expliquer le contenu de ces deux fichiers :
+1. Créer un/des fichier(s) DockerFile(s) pour builder notre image pour les serveurs de production
+2. Créer un fichier docker-compose.yml pour démarrer nos containers, nos services
+3. Modifier la documentation qui va expliquer le contenu de ces deux fichiers :
   a. DockerFile(s) pour builder notre image
   b. Docker-compose pour démarrer le(s) container(s) (Bien décrire l’ensemble des différentes étapes d’exécution des commandes associés aux services)
 
-## Installation
+## Les fichiers DockerFiles
 
 Use the package manager [pip](https://pip.pypa.io/en/stable/) to install foobar.
 
