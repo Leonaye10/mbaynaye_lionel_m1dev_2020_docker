@@ -1,6 +1,14 @@
-# Mbaynaye_lionel_m1dev_2020_docker
+# Projet Docker
 
-Projet 
+## Les Objectifs
+
+1. Récupérer le projet API REST qui comporte une partie backend (API rest) et une partie frontend
+(reactJS)
+2. Créer un/des fichier(s) DockerFile(s) pour builder notre image pour les serveurs de production
+3. Créer un fichier docker-compose.yml pour démarrer nos containers, nos services
+4. Modifier la documentation qui va expliquer le contenu de ces deux fichiers :
+  a. DockerFile(s) pour builder notre image
+  b. Docker-compose pour démarrer le(s) container(s) (Bien décrire l’ensemble des différentes étapes d’exécution des commandes associés aux services)
 
 ## Installation
 
