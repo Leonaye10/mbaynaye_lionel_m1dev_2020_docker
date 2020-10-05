@@ -76,7 +76,7 @@ CMD ["npm", "start"]
 
 Ce fichier permet de décrire et gérer plusieurs conteneurs comme un ensemble de services. Il doit se trouver à la racine du projet
 
-```docker-compose
+```dockercompose
 # Definir la version du fichier
 version: "3.5"
 
