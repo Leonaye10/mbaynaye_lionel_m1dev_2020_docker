@@ -53,7 +53,7 @@ EXPOSE 8080
 CMD ["npm", "start"]
 ```
 
-+## Fichier Docker-Compose
+## Fichier Docker-Compose
 
 Ce fichier permet de décrire et gérer plusieurs conteneurs comme un ensemble de services
 
