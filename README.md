@@ -1,5 +1,13 @@
 # Projet Docker
 
+## Objectif du projet
+
+1 - Relier le backend avec la base de données Mongo
+2 - Créer des fichiers DockerFiles pour le backend et le frontend afin de pouvoir builder des images sur le serveurs
+3 - Créer un fichier Docker-Compose afin de builder plusieurs images en meme en tant que des services
+Bonus ==> Mettre a jour les images sur la registry en public
+
+
 ## Les fichiers DockerFiles
 
 Les fichiers DockerFiles nous permettent de builder les images sur les serveurs en productions
@@ -26,8 +34,8 @@ CMD ["npm", "start"]
 ### DockerFile BackEnd
 
 ```dockerfile
-# On crée une couche à partir de l'image Node avec la version 14
-FROM node:14
+# On crée une couche à partir de l'image Node avec la version 12
+FROM node:12
 # On définis le répertoire de travail ici qui est le backtend
 WORKDIR /app
 # Ici on rajoute tous les packages json dans le répertoire de base
@@ -54,8 +62,8 @@ version: "3.5"
 services:
 # Le service FrontEnd
     frontend:
-# On se base sur l'image node:14
-        image: node:14
+# On se base sur l'image node:12
+        image: node:12
 # Nous permet de builder l'image du fichier docekerFile qui se trouve dans le répertoire frontend
         build: ./frontend
 # C'est pour démarrer automatiquement le conteneur en cas de redémarrage du serveur
@@ -68,8 +76,8 @@ services:
             - backend
 # Le service BackEnd
     backend:
-# On se base sur l'image node:14
-        image: node:14
+# On se base sur l'image node:12
+        image: node:12
 # Nous permet de builder l'image du fichier docekerFile qui se trouve dans le répertoire frontend
         build: ./backend
 # C'est pour démarrer automatiquement le conteneur en cas de redémarrage du serveur
