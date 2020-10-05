@@ -16,7 +16,7 @@ Les fichiers DockerFiles nous permettent de builder les images sur les serveurs 
 
 ```dockerfile
 # On crée une couche à partir de l'image Node avec la version 14
-FROM node:14
+FROM node:12
 # On définis le répertoire de travail ici qui est le frontend
 WORKDIR /app
 # Ici on rajoute tous les packages json dans le répertoire de base
@@ -35,7 +35,7 @@ CMD ["npm", "start"]
 
 ```dockerfile
 # On crée une couche à partir de l'image Node avec la version 14
-FROM node:14
+FROM node:12
 # On définis le répertoire de travail ici qui est le backtend
 WORKDIR /app
 # Ici on rajoute tous les packages json dans le répertoire de base
