@@ -3,8 +3,11 @@
 ## Objectif du projet
 
 1 - Relier le backend avec la base de données Mongo
+
 2 - Créer des fichiers DockerFiles pour le backend et le frontend afin de pouvoir builder des images sur le serveurs
+
 3 - Créer un fichier Docker-Compose afin de builder plusieurs images en meme en tant que des services
+
 Bonus ==> Mettre a jour les images sur la registry en public
 
 
